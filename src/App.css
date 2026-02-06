@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+}
+
+.switch{
+  display: flex;
+  justify-content: end;
+  margin: 5px;
+}
+
+button{
+  cursor: pointer;
+  font-size: 22px;
+  margin: 2px 0px 10px 0px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  background-color:#000 ;
+}
+
+button:hover{
+  border-color:antiquewhite;
+}
+.new-b{
+  background: #000;
+  width: 100%;
+  height: 99vh;
+}
+.new-w{
+  background: #fff;
+}
