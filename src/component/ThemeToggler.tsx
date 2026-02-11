@@ -1,14 +1,20 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "../App.css";
 
 function ThemeToggler() {
+  
+  
   const [isDark, setDark] = useState(false);
 
-  const toggleDark = () => {
+  const toggleDark = useCallback(() => {
     setDark(!isDark);
 
     localStorage.setItem("theme", isDark ? "light" : "dark");
-  };
+  }, [isDark]);
+
+    console.log(isDark);
+
+
 
   useEffect(() => {
     const saved = localStorage.getItem("theme");
